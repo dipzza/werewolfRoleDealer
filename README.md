@@ -1,2 +1,2 @@
 # Werewolf Role Dealer
-Web para repartir roles de los hombres lobo de castronegro usando PeerJS
+Web to deal Werewolves of Miller's Hollow roles using PeerJS.
