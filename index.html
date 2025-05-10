@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hombres Lobo</title>
+  <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hombres Lobo de Castronegro</h1>
+
+  <div id="menu">
+    <form id="join-form">
+      <input type="text" id="join-room-code" placeholder="Room Code" required>
+      <input type="text" id="nickname" placeholder="Your Name" required>
+      <button type="submit">Join Room</button>
+    </form>
+
+    <button id="create-btn">Create Room</button>
+  </div>
+
+  <div id="host-panel" hidden>
+    <h2>Room Code: <span id="room-code"></span></h2>
+
+    <h2><span id="players-count">0</span> players:</h2>
+    <ul id="players-list"></ul>
+    <button id="deal-roles" disabled="true">Deal Roles</button>
+
+    <h3>Select Roles <span id="role-count-status">0/0</span></h3>
+    <div id="role-picker"></div>
+  </div>
+
+  <div id="player-panel" hidden>
+    <h2 id="waiting-to-start">Waiting for game to start...</h2>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

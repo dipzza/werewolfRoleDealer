@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 0.5rem;
+}
+
+#players-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  text-align: center;
+}
+#players-list li {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#role-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.role-option {
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
