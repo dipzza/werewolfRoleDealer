@@ -1,6 +1,7 @@
 const availableRoles = [
   "Lobo", "Aldeano", "Vidente", "Cupido",
-  "Cazador", "Bruja", "La niña"
+  "Cazador", "Bruja", "Niña", "Guardian",
+  "Zorro", "Cabeza de turco", 
 ];
 
 let selectedRoles = [];
@@ -72,10 +73,8 @@ function createUniquePeer(maxRetries = 5) {
       const peer = new Peer(id, {
         config: {
           iceServers: [
-            [ 
               {urls: 'stun:freestun.net:3478' }, 
-              {urls: 'turn:freestun.net:3478', username: 'free', credential: 'free' } 
-            ]
+              {urls: 'turn:freestun.net:3478', username: 'free', credential: 'free' }
           ]
         }
       });
