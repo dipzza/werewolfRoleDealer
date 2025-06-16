@@ -1,7 +1,8 @@
 const availableRoles = [
   "Lobo", "Aldeano", "Vidente", "Cupido",
   "Cazador", "Bruja", "Niña", "Guardian",
-  "Zorro", "Cabeza de turco", 
+  "Zorro", "Cabeza de turco", "Lobo Blanco",
+  "Ángel"
 ];
 
 let selectedRoles = [];
