@@ -1,7 +1,7 @@
 const availableRoles = [
-  "Lobo", "Aldeano", "Vidente", "Cupido",
-  "Cazador", "Bruja", "Niña", "Guardian",
-  "Zorro", "Cabeza de turco", "Lobo Blanco",
+  "Hombre Lobo", "Aldeano", "Vidente", "Cupido",
+  "Cazador", "Bruja", "Niña", "Protector",
+  "Zorro", "Cabeza de turco", "Hombre Lobo Albino",
   "Ángel"
 ];
 
@@ -154,3 +154,5 @@ function renderRolePicker() {
     };
   });
 }
+
+

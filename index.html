@@ -12,23 +12,28 @@
 
   <div id="menu">
     <form id="join-form">
-      <input type="text" id="join-room-code" placeholder="Room Code" required>
-      <input type="text" id="nickname" placeholder="Your Name" required>
-      <button type="submit">Join Room</button>
+      <input type="text" style="text-transform:uppercase" id="join-room-code" placeholder="ID de Sala" required>
+      <input type="text" id="nickname" placeholder="Tu nombre" required>
+      <button type="submit">Unirse a Sala</button>
     </form>
 
-    <button id="create-btn">Create Room</button>
+    <button id="create-btn">Crear Sala</button>
   </div>
 
   <div id="host-panel" hidden>
-    <h2>Room Code: <span id="room-code"></span></h2>
+    <h2>ID de Sala: <span id="room-code"></span></h2>
 
-    <h2><span id="players-count">0</span> players:</h2>
+    <h2><span id="players-count">0</span> jugadores</h2>
     <ul id="players-list"></ul>
+
+    <h2>Elige los Roles <span id="role-count-status">0/0</span></h2>
+    <div id="role-picker"></div>
     <button id="deal-roles" disabled="true">Deal Roles</button>
 
-    <h3>Select Roles <span id="role-count-status">0/0</span></h3>
-    <div id="role-picker"></div>
+    <h2>Chuleta</h2>
+  <strong>Primera noche:</strong> Cupido y los enamorados </br>
+  <strong>Todas las noches:</strong> la Vidente, el Zorro, el Protector, los Hombres Lobo, el Hombre Lobo Albino (una noche cada dos) y la Bruja
+
   </div>
 
   <div id="player-panel" hidden>
