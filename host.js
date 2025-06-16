@@ -69,7 +69,16 @@ function createUniquePeer(maxRetries = 5) {
 
     function tryPeer() {
       const id = generateRoomId();
-      const peer = new Peer(id);
+      const peer = new Peer(id, {
+        config: {
+          iceServers: [
+            [ 
+              {urls: 'stun:freestun.net:3478' }, 
+              {urls: 'turn:freestun.net:3478', username: 'free', credential: 'free' } 
+            ]
+          ]
+        }
+      });
 
       peer.on('open', () => resolve(peer));
       peer.on('error', err => {

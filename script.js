@@ -12,7 +12,16 @@ function joinRoom(e) {
 
   const roomCode = document.getElementById('join-room-code').value.trim().toUpperCase();
   const name = document.getElementById('nickname').value.trim();
-  const peer = new Peer();
+  const peer = new Peer({
+    config: {
+      iceServers: [
+        [ 
+          {urls: 'stun:freestun.net:3478' }, 
+          {urls: 'turn:freestun.net:3478', username: 'free', credential: 'free' } 
+        ]
+      ]
+    }
+  });
 
   peer.on('open', id => {
     const conn = peer.connect(roomCode);
